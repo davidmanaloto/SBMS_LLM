@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /main.py
 
 # Install Ollama client
 RUN pip install ollama
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Define the command to run your application
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
