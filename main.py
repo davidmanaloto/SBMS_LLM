@@ -1,6 +1,6 @@
 import json
 import pandas as pd
-from langchain_community.embeddings import OllamaEmbeddings
+from langchain_ollama import OllamaEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_community.llms import Ollama
 from langchain_core.documents import Document
